@@ -9,26 +9,7 @@ pipeline {
             }
         }
 
-        stage('Build') {
-            steps {
-                // Build the project (replace with your build tool and commands)
-                sh 'mvn clean install'  // Example for Maven build
-            }
-        }
-
-        stage('Test') {
-            steps {
-                // Run tests (replace with your testing commands)
-                sh 'mvn test'  // Example for Maven test
-            }
-        }
-
-        stage('Deploy') {
-            steps {
-                // Deployment steps (replace with your deployment commands)
-                sh 'echo "Deploying to production"'  // Example deployment command
-            }
-        }
+       
     }
 
     post {
