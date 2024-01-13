@@ -1,5 +1,5 @@
 pipeline {
-    agent agent  // Runs on any available agent (can be customized to a specific agent)
+    agent any  // Runs on any available agent (can be customized to a specific agent)
 
     stages {
         stage('Checkout') {
